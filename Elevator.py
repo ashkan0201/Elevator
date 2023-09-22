@@ -41,7 +41,7 @@ rect_speed = 0.5
 
 checkbox_states = [False] * len(checkbox_labels)
 d = {0:115 , 1:215 , 2:315 , 3:415 , 4:515 , 5:615}
-d1 = {115:0 , 215:1 , 315:2 , 415:3 , 515:4 , 615:5}
+
 outsaid = []
 insaid = []
 running = True
