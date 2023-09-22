@@ -1,13 +1,19 @@
+
+# Add required library
 import pygame
 from time import sleep
+
+# Window size
 WIDTH = 600
 HEIGHT = 800
 FPS = 60
 
+# 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 
+# Specifications of checkboxes
 checkbox_width = 20
 checkbox_height = 20
 checkbox_margin = 10
@@ -16,10 +22,12 @@ checkbox_y_start = checkbox_margin
 checkbox_y_spacing = checkbox_height + checkbox_margin
 checkbox_locked = False
 
+# The size of the numbers
 number_font_size = 30
 number_spacing = 70
 number_x = 10
 
+# Elevator location
 rect_width = 25
 rect_height = 50
 rect_x = (WIDTH - rect_width) // 2
@@ -33,6 +41,7 @@ numbers = ["5", "4", "3", "2", "1", "G"]
 
 checkbox_labels = ["5", "4", "3", "2", "1", "G"]
 
+# Create a window
 pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
@@ -44,6 +53,8 @@ d = {0:115 , 1:215 , 2:315 , 3:415 , 4:515 , 5:615}
 
 outsaid = []
 insaid = []
+
+# The main ring of the elevator
 running = True
 while running:
     clock.tick(FPS)
@@ -77,6 +88,8 @@ while running:
         number_y += number_font_size + number_spacing
 
     pygame.draw.rect(screen, (221, 144, 254), (rect_x, rect_y , rect_width, rect_height))
+
+    # Movement part
     move_up = False
     move_down = False
     try:
