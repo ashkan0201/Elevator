@@ -46,7 +46,7 @@ pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
-rect_speed = 0.5
+rect_speed = 1
 
 checkbox_states = [False] * len(checkbox_labels)
 d = {0:115 , 1:215 , 2:315 , 3:415 , 4:515 , 5:615}
