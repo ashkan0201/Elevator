@@ -14,7 +14,7 @@ This software is made with PyGame.
 
 ## Installation
 ```
-    $ pip install pygame
+pip install pygame
 ```
 or
 ```
