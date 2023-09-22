@@ -16,6 +16,10 @@ This software is made with PyGame.
 ```
     $ pip install pygame
 ```
+or
+```
+pip install -r requirements.txt
+```
 
 ## My information
 
