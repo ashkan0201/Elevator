@@ -124,5 +124,4 @@ while running:
         checkbox_text = checkbox_font.render(checkbox_labels[i], True, (255, 0, 81))
         screen.blit(checkbox_text, (checkbox_x - checkbox_text.get_width() - checkbox_margin, checkbox_y_start + i * checkbox_y_spacing))
     pygame.display.flip()
-    print(outsaid,insaid)
 pygame.quit()
